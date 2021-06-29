@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% block content %}
+
+<!-- Form  -->
+<div class="container">
+  <form action="/" method="POST">
+    <div class="mb-2">
+      <select name="country1" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+        onchange="print_state('sts')">
+        <option selected>Select your Country</option>
+        <option value="1">India</option>
+
+      </select>
+    </div>
+    <div class="mb-2">
+      <select onchange="print_city('state', this.selectedIndex);" id="sts" name="stt"
+        class="form-select form-select-lg mb-3" required aria-label=".form-select-lg example">
+        <option selected>Select your State</option>
+
+      </select>
+
+      </script>
+    </div>
+    <div class="mb-2">
+      <select name="city1" id="state" class="form-select form-select-lg mb-3" required
+        aria-label=".form-select-lg example">
+        <option selected>Select your City</option>
+        >
+      </select>
+
+    </div>
+    <div class="container bg-light">
+      <div class="col-md-12 text-center">
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+
+
+
+      {% endblock content %}
